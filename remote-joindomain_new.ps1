@@ -1,0 +1,1 @@
+﻿Add-Computer -ComputerName (Get-Content 'D:\psfolder\joincomputerslist.txt') -LocalCredential 'Administrator' -DomainName IOMINT -Credential 'IOMINT\aborisenkoff' -Force 

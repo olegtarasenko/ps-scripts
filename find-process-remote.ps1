@@ -1,0 +1,1 @@
+gwmi Win32_Process -ComputerName $computer | %{ if ($_.getowner().User -match "$user") { $_.ProcessName } }

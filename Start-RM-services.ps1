@@ -1,0 +1,1 @@
+﻿Get-Service -ComputerName (Get-Content 'D:\psfolder\joincomputerslist.txt') | Where-Object {$_.Name -match "WinRM","RemoteRegistry"} | Set-Service -Status Running

@@ -1,0 +1,1 @@
+﻿Add-Computer -DomainName IOMINT -Credential 'iomint\aborisenkoff' -Restart
