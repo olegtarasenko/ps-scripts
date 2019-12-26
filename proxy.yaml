@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: webapp
+ namespace: azure-vova-test
+spec:
+ rules:
+ - host: {{ https://console22-f1c49004.hcp.eastus2.azmk8s.io }}
+ http:
+ paths:
+ - backend:
+ serviceName: webapp
+ servicePort: 80
+ path: /
