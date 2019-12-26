@@ -5,7 +5,7 @@ metadata:
  namespace: azure-vova-test
 spec:
  rules:
- - host: {{ https://console22-f1c49004.hcp.eastus2.azmk8s.io }}
+ - host: {{ https://console22-f1c49004.hcp.eastus2.azmk8s.io:443 }}
  http:
  paths:
  - backend:
